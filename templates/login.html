@@ -1,0 +1,16 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<!doctype html>
+<html>
+	<head></head>
+	<h1> Login Page </h1>
+
+	<form method = 'POST' action = '/login'>
+		<input name = 'username' placeholder="username"></input>
+		<input name = 'password' placeholder="password"></input>
+		<button type = 'submit'>submit</button>
+	</form>
+
+	<div name = 'errors'>
+		<h2 style = "color:'red">{{error}}</h2>
+	</div>
