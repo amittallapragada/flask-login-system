@@ -1,1 +1,0 @@
-['Your username is taken.', 'Your password is too short.']
