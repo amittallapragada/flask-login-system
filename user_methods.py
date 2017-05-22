@@ -23,8 +23,10 @@ def signupchecker(username, password):
 def loginchecker(username, password):
  	if db.posts.find_one({ "$and": [ { "username" : username }, { "password" : password } ] }):
  		return 1
+ 	elif str(db.posts.find_one({ "$and": [ { "username" : username }, { "password" : password } ] })) == 'None':
+ 		print "true"
+ 		return 0
  	else:
  		return 0
-
 
 
